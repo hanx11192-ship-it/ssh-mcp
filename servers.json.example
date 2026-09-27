@@ -1,0 +1,26 @@
+{
+  "servers": [
+    {
+      "id": "nas",
+      "host": "192.168.1.10",
+      "port": 22,
+      "username": "admin",
+      "private_key_path": "~/.ssh/id_ed25519",
+      "sudo_password": "optional-sudo-password"
+    },
+    {
+      "id": "router",
+      "host": "192.168.1.1",
+      "username": "root",
+      "password": "router-password"
+    },
+    {
+      "id": "pi",
+      "host": "192.168.1.20",
+      "port": 2222,
+      "username": "pi",
+      "password": "pi-password",
+      "host_key_policy": "auto_accept"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# 本地构建产物（仓库根目录下的临时编译输出）
+/ssh-mcp
+/ssh-mcp.exe
+*.test
+
+# 敏感配置：真实凭据永远不要提交
+servers.json
+.ssh-mcp/
+
+# IDE / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# 预编译二进制默认随仓库分发（方便直接下载使用）。
+# 若你更愿意用 GitHub Releases 发布二进制，请取消下面这行注释：
+# dist/
